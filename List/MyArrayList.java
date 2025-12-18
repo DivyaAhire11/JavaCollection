@@ -1,3 +1,4 @@
+
 /*
  *METHODS OF COLLECTION INTERFACE
  Common methods for entire collection
