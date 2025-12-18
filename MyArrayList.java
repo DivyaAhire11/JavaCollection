@@ -27,7 +27,7 @@ List : List is a collection
  *) null allowed in List
  *) Ordered by insertion
  *) No Limitation of Size and Any Data we can stored
- *) ArrayList madye kadhi false nhi yenar insertion la karn kontehi value store karta and unlimited size mule
+ *) ArrayList madye kadhi false nhi yenar insertion la karn kontehi value store karta yetat and unlimited size mule
  *) Automatic grow and shrink
 */
 
