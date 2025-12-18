@@ -1,0 +1,78 @@
+🔹 Java List Interface
+    -- List is a child interface of Collection
+    -- It maintains insertion order
+    -- Allows duplicate elements
+    -- Provides index-based access
+
+🔹Common Methods of List
+  1.add(), add(index, element)
+  3.get(index)
+  4.set(index, element)
+  5.remove(index)
+  6.size()
+  7.contains()
+  8.iterator()
+
+🔹 Similarities (ArrayList, LinkedList, Vector)
+   --> Implement List interface
+   --> Maintain insertion order
+   --> Allow duplicate elements
+   --> Allow null values
+   --> Index based access
+   --> Dynamic size
+
+ 🔹 ArrayList  
+   *) Uses dynamic array
+   *) Elements stored in contiguous memory
+   *) When capacity is full → new array created (grow by ~50%)
+
+🔸 Key Points
+   -->Not synchronized
+   -->Fast access
+   -->Best when retrieval is frequent
+
+🔹 LinkedList
+  *)Uses doubly linked list
+  *)ll.addFirst(10);
+  *)ll.addLast(20);
+  *)ll.removeFirst();
+  *)More memory usage
+
+🔹 Vector
+  -->Legacy class
+  -->Growth: 100% increase (double size)
+
+🔸 Key Points
+  *)Synchronized
+  *)Slower than ArrayList
+  *)Mostly not used in modern Java
+
+Arraylist 
+  -- capacity double hot nhi 
+
+
+Vector
+ ---capacity double hote
+ ---lagecy class
+ ---all method synchronized
+
+ LinkedList
+   -->addFirst()
+   -->addLast()
+
+
+| Feature                | ArrayList     | LinkedList          | Vector             |
+| ---------------------- | ------------- | ------------------- | ------------------ |
+| Data Structure         | Dynamic Array | Doubly Linked List  | Dynamic Array      |
+| Synchronization        | ❌ No         | ❌ No                | ✅ Yes              |
+| Thread Safe            | ❌            | ❌                   | ✅                  |
+| Access Speed           | 🚀 Fast       | ❌ Slow              | 🚀 Fast            |
+| Insert/Delete (middle) | ❌ Slow       | 🚀 Fast             | ❌ Slow             |
+| Memory Usage           | Low           | High                | Medium             |
+| Legacy                 | ❌            | ❌                   | ✅                  |
+| Best Use               | Read-heavy    | Insert/Delete-heavy | Multi-thread (old) |
+
+
+ArrayList → Fast Read
+LinkedList → Fast Modify
+Vector → Thread Safe but Slow
