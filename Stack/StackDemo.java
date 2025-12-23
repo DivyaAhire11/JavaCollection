@@ -14,7 +14,7 @@ public class StackDemo {
     public static void main(String[] args) {
         
           Stack s = new Stack();
-          s.add(11);
+          s.add(11);     //add for boolean
           s.add("Hiii");
           s.add(22);
           s.add(11);
