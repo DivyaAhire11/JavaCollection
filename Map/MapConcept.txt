@@ -1,0 +1,105 @@
+MAP 
+   ---> Map is part of the Java Collections Framework and is used to store data as key–value pairs
+
+What is a Map?
+ 1.Stores keys and Values
+ 2.Each key is Unique
+ 3.A key maps to one Values
+ 4.Values can be duplicated
+
+ ** Map is an inteface,not a class **
+ ---------------------------------------------------
+ Map
+ ├── HashMap
+ ├── LinkedHashMap
+ ├── TreeMap
+ └── Hashtable
+
+Creating a Map 
+    import java.util.*;
+    Map<Integer , String> map = new HashMap<>();
+        Integer → key type
+        String → value type
+
+---------------------------------------------------------
+Adding Elements(put)
+    map.put(1, "Apple");
+    map.put(2, "Banana");
+    map.put(3, "Orange");
+
+⚠️ If you add a value with an existing key, the old value is replaced:
+
+map.put(2, "Mango"); // Banana is replaced
+-----------------------------------------------------------
+
+Accessing Elements (get)
+
+   String fruit = map.get(1); // Apple
+
+If key does not exist:
+    map.get(10); // returns null
+-----------------------------------------------------------
+
+Removing Elements
+   map.remove(3); // removes key 3 and its value
+
+-----------------------------------------------------------
+
+Checking Keys and Values
+    map.containsKey(1);     // true
+    map.containsValue("Apple"); // true
+    map.isEmpty();          // false
+    map.size();             // number of entries
+
+------------------------------------------------------------
+
+Iterating Through a Map
+a) Using entrySet() (Most common)
+
+for (Map.Entry<Integer, String> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + " = " + entry.getValue());
+}
+
+b) Using keySet()
+for (Integer key : map.keySet()) {
+    System.out.println(key + " = " + map.get(key));
+}
+
+c) Using values()
+for (String value : map.values()) {
+    System.out.println(value);
+}
+
+---------------------------------------------------------------
+
+🔹 HashMap
+     *)Fast
+     *)No order maintained
+     *)Allow one null key,multiple null values
+
+Map<String, Integer> map = new HashMap<>();
+
+---------------------------------------------------------------
+
+🔹 LinkedHashMap
+    *) maintains insertion order
+    *) Slightly slower than HashMap
+
+Map<String, Integer> map = new LinkedHashMap<>();
+
+---------------------------------------------------------------------
+
+🔹 TreeMap
+    *) Stores keys in sorted order
+    *) Slower than HashMap
+    *) Does not allow null keys
+
+Map<String, Integer> map = new TreeMap<>();
+
+--------------------------------------------------------------
+
+🔹 Hashtable
+     *)Thread-safe
+     *) No null keys or values
+     *) Mostly replaced by newer classes
+     
