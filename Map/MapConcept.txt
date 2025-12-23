@@ -1,6 +1,7 @@
 MAP 
    ---> Map is part of the Java Collections Framework and is used to store data as key–value pairs
-
+   ----> Map does not extends the Collection inerface
+   
 What is a Map?
  1.Stores keys and Values
  2.Each key is Unique
@@ -102,4 +103,3 @@ Map<String, Integer> map = new TreeMap<>();
      *)Thread-safe
      *) No null keys or values
      *) Mostly replaced by newer classes
-     
