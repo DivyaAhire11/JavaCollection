@@ -3,7 +3,12 @@ package Map;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.Map;
-
+/**
+ * HashMap
+ * No order guaranteed
+ * Fast performance
+ * Allows one null key and multiple null values
+ */
 public class AboutHashMap {
     public static void main(String[] args) {
 
