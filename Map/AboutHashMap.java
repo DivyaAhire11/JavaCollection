@@ -75,5 +75,8 @@ public class AboutHashMap {
           System.out.println(hm);   //{2=AKSHIT, 3=SAYALI, 53=SHUBHAM, 73=NEHA, 111=RITU}
 
 
+          for(String value : hm.values()){
+            System.out.println(value);
+          }
     }
 }
