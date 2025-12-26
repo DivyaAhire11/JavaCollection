@@ -115,3 +115,82 @@ HashMap       	     No	        Keys: No	      No
 Hashtable   	     No	        Keys: No	      Yes
 
 We use generics and collections to store data dynamically with type safety, better performance, and structured access using interfaces like Collection, List, and hash-based classes.
+
+-----------------------------------------------------
+1️⃣ COMMON METHODS (Available in ALL List implementations)
+
+These come from Collection + List interface, so they work in:
+
+✅ ArrayList
+✅ LinkedList
+✅ Vector
+✅ Stack
+
+------------------------------------------------------
+add()
+add(index, element)
+remove()
+remove(index)
+contains()
+size()
+isEmpty()
+clear()
+get(index)
+set(index, element)
+indexOf()
+lastIndexOf()
+iterator()
+listIterator()
+
+Memory trick:
+
+“A R C S G S I L I”
+(Add, Remove, Contains, Size, Get, Set, IndexOf, LastIndexOf, Iterator)
+
+------------------------------------------------------
+2️⃣ ARRAYLIST – SPECIFIC METHODS
+   ---->ArrayList has NO extra methods
+   ---->It ONLY uses List + Collection methods.
+
+ArrayList = Simple Array
+No front, no back, only index
+-------------------------------------------------------
+3️⃣ LINKEDLIST – SPECIFIC METHODS
+LinkedList implements:
+   List
+   Deque
+   Queue
+So it has extra methods for front & back operations.
+LINKEDLIST ONLY METHODS
+   addFirst()
+   addLast()
+   removeFirst()
+   removeLast()
+   getFirst()
+   getLast()
+   offer()
+   poll()
+   peek()
+   
+LinkedList = Chain
+Front & Back possible
+--------------------------------------------------------
+
+4️⃣ VECTOR – SPECIFIC METHODS (Legacy)
+Vector is synchronized (thread-safe).
+
+addElement()
+removeElement()
+elementAt()
+capacity()
+
+---------------------------------------------------------
+5️⃣ STACK – SPECIFIC METHODS (Extends Vector)
+Stack follows LIFO (Last In First Out).
+
+     push()
+     pop()
+     peek()
+     empty()
+     search()
+     

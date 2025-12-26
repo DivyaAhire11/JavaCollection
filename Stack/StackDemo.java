@@ -12,36 +12,33 @@ import java.util.Stack;
 
 public class StackDemo {
     public static void main(String[] args) {
-        
-          Stack s = new Stack();
-          s.add(11);     //add for boolean
-          s.add("Hiii");
-          s.add(22);
-          s.add(11);
-          s.add(32);
-          s.add("Hello");
-          
-          System.out.println(s); // [11, Hiii, 22, 11, 32, Hello]
-          
-          int c = s.capacity();
-          System.out.println("capacity of Stack is :" + c); // 10
-          
-          s.push("Divya");
-          s.push("Ahire");
-          System.out.println(s); // [11, Hiii, 22, 11, 32, Hello, Divya, Ahire]
-          
-          Object a = s.pop();
-          Object b = s.pop();
-          Object d = s.pop();
-          
-          System.out.println(a); // Ahire
-          System.out.println(b); // Divya
-          System.out.println(d); // Hello
-          System.out.println(s); // [11, Hiii, 22, 11, 32]
-          
-          int aa = (Integer)s.pop();
-          System.out.println(aa); //32
-         
+
+        Stack s = new Stack();
+        s.add(11); // add for boolean
+        s.add(22);
+        s.add(11);
+        s.add(32);
+
+        System.out.println(s); // [11, Hiii, 22, 11, 32, Hello]
+
+        int c = s.capacity();
+        System.out.println("capacity of Stack is :" + c); // 10
+
+        s.push("Divya");
+        s.push("Ahire");
+        System.out.println(s); // [11, Hiii, 22, 11, 32, Hello, Divya, Ahire]
+
+        Object a = s.pop();
+        Object b = s.pop();
+        Object d = s.pop();
+
+        System.out.println(a); // Ahire
+        System.out.println(b); // Divya
+        System.out.println(d); // Hello
+        System.out.println(s); // [11, Hiii, 22, 11, 32]
+
+        int aa = (Integer) s.pop();
+        System.out.println(aa); // 32
 
         Stack<Integer> s2 = new Stack<>(); // generics
         s2.push(22);
@@ -93,11 +90,10 @@ public class StackDemo {
         // s2.remove(Integer.valueOf(30));
         // System.out.println("Remove 30 element : "+s2); //[22, 27, 324, 78]
 
+        // Stack implement : Stack class ,LinkedList class
+        // why linked list : double ended linked list
 
-         // Stack implement : Stack class ,LinkedList class
-        // why linked list :  double ended linked list 
-       
-        //LinkedList as stack
+        // LinkedList as stack
         LinkedList<Integer> ll = new LinkedList<>();
         ll.addLast(1); // push
         ll.getLast(); // peek
