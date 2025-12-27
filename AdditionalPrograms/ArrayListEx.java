@@ -6,7 +6,7 @@ import java.util.*;
     read n string into Arraylist Collection.
     Display the elemnts of collection in reverse order.
 */
-public class Program2 {
+public class ArrayListEx {
     public static void main(String[] args) {
         ArrayList<String> a = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
@@ -27,10 +27,9 @@ public class Program2 {
         System.out.println("After Sorting :");
         Collections.sort(a, Collections.reverseOrder());
 
-        Iterator<String> it = a.iterator();
-        while (it.hasNext()) {
-            System.out.println(it.next());
-        }
+       for(String s : a){
+        System.out.println(s);
+       }
         sc.close();
     }
 }

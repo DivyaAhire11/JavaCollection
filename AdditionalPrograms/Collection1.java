@@ -7,7 +7,7 @@ import java.util.*;
    the String should be stored in a collection in the descending order.
    display using iterator
  */
-public class Program1 {
+public class Collection1 {
     public static void main(String[] args) {
         if (args.length == 10) {
             ArrayList<String> ll = new ArrayList<>();
