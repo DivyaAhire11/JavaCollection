@@ -19,23 +19,32 @@ public class LinkedHM {
         lhm.put("Dia", 77.88f);
         lhm.put("Pia", 89.18f);
 
-        //LinkedHashMap does NOT have iterator() directly
+        // LinkedHashMap does NOT have iterator() directly
         // iterator() is available on:
         // keySet()
         // values()
         // entrySet()
         // Not on the Map itself.
         Set set = lhm.entrySet();
-       
-        //Get The Iterator
-         Iterator i = set.iterator();   
-        while(i.hasNext()){
-            Map.Entry me = (Map.Entry)i.next();
-            System.out.println(me.getKey()+" : "+me.getValue());
+
+        // Get The Iterator
+        Iterator i = set.iterator();
+        while (i.hasNext()) { // Uses Map.Entry
+            Map.Entry me = (Map.Entry) i.next();
+            System.out.println(me.getKey() + " : " + me.getValue()); // Access key & value separately
         }
-        //Deposite 1000 into Meet's account
-        float b = lhm.get("Meet").floatValue();
-        lhm.put("Meet",(b+1000));
-        System.out.println("Meet's new Balance : "+lhm.get("Meet"));
+        
+        // while (i.hasNext()) { // Uses toString()
+        //     System.out.println(i.next()); // Prints entry as key=value
+        // }
+
+        for (Map.Entry<String, Float> me : lhm.entrySet()) {
+            System.out.println(me.getKey() + " : " + me.getValue());
+        }
+
+        // Deposite 1000 into Meet's account
+        float b = lhm.get("Meet");
+        lhm.put("Meet", (b + 1000));
+        System.out.println("Meet's new Balance : " + lhm.get("Meet"));
     }
 }
