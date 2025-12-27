@@ -50,7 +50,7 @@ public class StudentHashTable {
             }
 
             if (ht.containsKey(searchNm))
-                System.out.println("Record Found and Pecentage is :" + ht.get(searchNm));
+                System.out.println("Record Found and Pecentage is :" + ht.get(searchNm)+"%");
             else
                 System.out.println("Record Not Found!!!");
 
